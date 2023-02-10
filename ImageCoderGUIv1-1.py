@@ -226,7 +226,7 @@ class ImageCoder(QMainWindow):
             if 'desktop.ini' in files: files.remove('desktop.ini')
             if '.DS_Store' in files: files.remove('.DS_Store')
             for i in files: 
-                file_name, file_ext = i.split('.')
+                file_name, file_ext = i.rsplit('.',1)
                 while True:
                     code =str(randint(10**(x-1), 10**x-1)) #x is code length
                     if code in self.DBCodes: 

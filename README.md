@@ -16,6 +16,8 @@ The application can be built using the .spec file with the following command:
 
 `pyinstaller ImageCoder_v1.1.spec`
 
+The `--onefile` option can also be used when generating the .spec file in order to generate a onefile application, rather than a one directory application. This will make the application file size larger, but easier to distribute. 
+
 The `linux/` directory contains the application built for linux (Ubuntu, WSL).
 
 ## Description
@@ -42,7 +44,7 @@ to make sure no duplicate codes are used.
 
 ### Updates from version 1.0:
 
-The folder with images in it can now have other folders! The program will walk through the entire directory tree of the provided root folder and find all images/files and code them. 
+The folder with images in it can now have other folders! The program will walk through the entire directory tree of the provided root folder and find all images/files and code them. However, the directory tree/structure will not be preserved when saving the new coded images/files.
 
 #### Other Notes:
 
