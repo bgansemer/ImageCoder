@@ -10,7 +10,7 @@ A standalone application was built using [Pyinstaller](https://pyinstaller.org/e
 
 First a spec file was generated using:
 
-`pyi-makespec -n ImageCoder_v1.1 ImageCoderGUIv1.1.py`
+`pyi-makespec --hidden-import openpyxl.cell._writer --windowed -n ImageCoder_v1.1 ImageCoderGUIv1-1.py`
 
 Then the application was built using:
 
