@@ -223,6 +223,9 @@ class ImageCoder(QMainWindow):
                 
 
         for root, subDirs, files in os.walk(self.imageDir):
+            #remove hidden desktop.ini and or .DS_Store files from the files list 
+            #so they do not get included in the image list for assigning code numbers
+            #this does NOT remove/delete the file from the system
             if 'desktop.ini' in files: files.remove('desktop.ini')
             if '.DS_Store' in files: files.remove('.DS_Store')
             for i in files: 
