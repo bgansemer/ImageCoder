@@ -4,9 +4,7 @@
 
 ## Building the application
 
-This script was written in Python 3.7. The executable was compiled using Pyinstaller 5.7.0.
-
-A standalone application was built using [Pyinstaller](https://pyinstaller.org/en/stable/).
+This script was written in Python 3.7. The script can be run in a python environment, or an executable can be compiled using [Pyinstaller 5.7.0](https://pyinstaller.org/en/stable/) for use without running a python environment.
 
 First a spec file was generated using:
 
@@ -18,7 +16,7 @@ The application can be built using the .spec file with the following command:
 
 The `--onefile` option can also be used when generating the .spec file in order to generate a onefile application, rather than a one directory application. This will make the application file size larger, but easier to distribute. 
 
-The `linux/` directory contains the application built for linux (Ubuntu, WSL).
+The application can also be built for linux or Mac if python is being run from a linux or Mac command line. In testing, the `--hidden-import` option is not needed for building and running the application on linux (Ubuntu, WSL). Building/running the application has not been tested on Mac.
 
 ## Description
 
